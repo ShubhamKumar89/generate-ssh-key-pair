@@ -2,12 +2,14 @@
 
 This repository will generate an SSH key pair for UNIX and LINUX systems.
 
-## Create RSA Key Pair
+## Create RSA SSH Key Pair
 
 **RSA**(*Rivest–Shamir–Adleman*) is a public-key cryptosystem or an algorithm that is widely used for secure data transmission. An RSA key pair includes a private and a public key. The RSA private key is used to generate digital signatures, and the RSA public key is used to verify digital signatures. RSA uses public key to encrypt messages which can only decrypted by using private key.
 
 ```bash
-ssh-keygen -t rsa
+ssh-keygen
+
+# ssh-keygen -t rsa
 # -t specifies the type of key we want to create 
 
 # you can also specify the length of the key(bit-size) by using -b option
